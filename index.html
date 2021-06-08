@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Piano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="image">
+        <img src="piano.jpg" alt="" srcset="">
+    </div>
+
+
+    <div class="piano">
+        <div data-note="C" data-key="65" class="key white"></div>
+        <div data-note="Db" data-key="83" class="key black"></div>
+        <div data-note="D" data-key="68" class="key white"></div>
+        <div data-note="Eb" data-key="70" class="key black"></div>
+        <div data-note="E" data-key="71" class="key white"></div>
+        <div data-note="F" data-key="72" class="key white"></div>
+        <div data-note="Gb" data-key="74" class="key black"></div>
+        <div data-note="G" data-key="75" class="key white"></div>
+        <div data-note="Ab" data-key="76" class="key black"></div>
+        <div data-note="A" data-key="90" class="key white"></div>
+        <div data-note="Bb" data-key="88" class="key black"></div>
+        <div data-note="B" data-key="67" class="key white"></div>
+    </div>
+
+    <audio id="C" data-key="65" src="notes/C.mp3"></audio>
+    <audio id="Db" data-key="83" src="notes/Db.mp3"></audio>
+    <audio id="D" data-key="68" src="notes/D.mp3"></audio>
+    <audio id="Eb" data-key="70" src="notes/Eb.mp3"></audio>
+    <audio id="E" data-key="71" src="notes/E.mp3"></audio>
+    <audio id="F" data-key="72" src="notes/F.mp3"></audio>
+    <audio id="Gb" data-key="74" src="notes/Gb.mp3"></audio>
+    <audio id="G" data-key="75" src="notes/G.mp3"></audio>
+    <audio id="Ab" data-key="76" src="notes/Ab.mp3"></audio>
+    <audio id="A" data-key="90" src="notes/A.mp3"></audio>
+    <audio id="Bb" data-key="88" src="notes/Bb.mp3"></audio>
+    <audio id="B" data-key="67" src="notes/B.mp3"></audio>
+
+
+    <div class="change_colour">
+        <label for="base">Change theme</label>
+        <input id="base" type="color" name="base" value="black">
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
